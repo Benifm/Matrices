@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.matrices.MainActivity">
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Set Type"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/det"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/det"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginBottom="55dp"
+        android:text="Determinant"
+        app:layout_constraintBottom_toTopOf="@+id/eigenVal"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/inv"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="55dp"
+        android:text="Inverse Matrix"
+        app:layout_constraintBottom_toTopOf="@+id/eigenVal"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/eigenVal"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="23dp"
+        android:text="Eigen Values"
+        app:layout_constraintBottom_toTopOf="@+id/exit"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/eigenVec"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:text="Eigen Vectors"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/exit"
+        app:layout_constraintHorizontal_bias="0.136" />
+
+</android.support.constraint.ConstraintLayout>
